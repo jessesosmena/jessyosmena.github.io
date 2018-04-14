@@ -1,23 +1,5 @@
-# Filter Job list 
+##Autocomplete 
 
-## Usage
+A AngularJS autocomplete search boxes that pull data from a server or local variable.
 
-cd Project
-```
-
-## Start Server at port 3002
-
-node server.js
-```
-
-## List of packaged used
-
-- AngularJS 1.5
-- HTML5
-- CSS3
-- SaSS
-- Native Javascript
-- Express
-
-
-Big thanks:
+Demo here: http://jessyosmena.github.io
