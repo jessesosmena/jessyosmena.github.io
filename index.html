@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Autocomplete Angularjs</title>
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+    <style type="text/css">
+      
+    </style>
+
+  </head>
+
+  <body>
+    
+    <div class="appCon col-md-4 col-md-offset-4" ng-app="myApp" ng-controller="CountryController">
+      <label for="country" class="text-center">Search Country Name</label> 
+
+      <input type="text" name="country" id="country" ng-model="country" ng-keyup="countryName(country)" placeholder="Enter country" class="form-control" />
+     
+      <ul class="list-group" ng-show="showlist">
+         <li class="list-group-item" ng-repeat="scountry in Countrys" ng-click="inputBox(scountry)">{{scountry}}</li>
+      </ul> 
+
+      <p id="sText" class="text-info">You Selected <strong>{{country}}</strong></p>
+    </div>
+   
+  </body>
+
+  <script type="text/javascript" src="angular/angular.js"></script>
+  <script type="text/javascript" src="angular/script.js"></script>
+</html>
